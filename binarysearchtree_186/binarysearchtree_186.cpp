@@ -34,8 +34,12 @@ public:
 
 		Node* parent = NULL;
 		Node* currentNode = NULL;
-		
+		search(element, parent, currentNode); // Locate the node which will be the parent of node
 
+		if (parent == NULL) {
+			ROOT = newNode;
+			return;
+		}
 		
 	}
 };  
