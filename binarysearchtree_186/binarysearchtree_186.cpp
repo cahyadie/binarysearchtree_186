@@ -36,10 +36,20 @@ public:
 		Node* currentNode = NULL;
 		search(element, parent, currentNode); // Locate the node which will be the parent of node
 
-		if (parent == NULL) {
-			ROOT = newNode;
+		if (parent == NULL) { //if the parent is NULL
+			ROOT = newNode; //mark the new node as root
 			return;
 		}
 		
+		if (element < parent->info) // if the value in the data field of the node is less than that of the parent
+		{
+			parent->leftchild = newNode; // make the left child of the parent point to the new node
+		}
+		else if (element > parent->info) // if the value in the data field of the new node is greater than that of the parent
+		{
+			parent->rightchild = newNode; // make the rightchild of the parent point to the new node
+		}
 	}
+
+
 };  
