@@ -61,7 +61,15 @@ public:
 				currentNode = currentNode->leftchild;
 			else
 				currentNode = currentNode->rightchild;
+		}
+	}
 
+	void inorder(Node* ptr)
+	{
+		if (ROOT == NULL)
+		{
+			cout << "tree is emptty" << endl;
+			return;
 		}
 	}
 };  
