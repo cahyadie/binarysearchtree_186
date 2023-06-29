@@ -24,4 +24,18 @@ public:
 	BinaryTree() {
 		ROOT = NULL; //initializing ROOT to null
 	}
-};
+
+	void insert(string element)//insert a node in the binary seacrh tree
+	{
+		Node* newNode = new Node(element, NULL, NULL); // Allocate memory for the new node
+		newNode->info = element; // Assign value to the data field of the new node
+		newNode->leftchild = NULL; // Make the leftchild of the new node point to null
+		newNode->rightchild = NULL; //Make the rightchild of the new node point to null
+
+		Node* parent = NULL;
+		Node* currentNode = NULL;
+		
+
+		
+	}
+};  
